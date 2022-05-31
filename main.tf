@@ -14,5 +14,5 @@ resource "aws_instance" "yourname" {
 }
 
 output "yourname" {
-  value = "${aws_instance.jai.public_ip}"
+  value = "${aws_instance.yourname.public_ip}"
 }
