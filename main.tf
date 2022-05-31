@@ -2,7 +2,7 @@ provider "aws" {
   region = "us-west-1"
 }
 
-resource "aws_instance" "jai" {
+resource "aws_instance" "yourname" {
   ami = "ami-0add1785eac72fc1a"
   instance_type = "t2.micro"
   key_name = "jai-wsl2-key"
@@ -13,6 +13,6 @@ resource "aws_instance" "jai" {
 
 }
 
-output "jai" {
+output "yourname" {
   value = "${aws_instance.jai.public_ip}"
 }
